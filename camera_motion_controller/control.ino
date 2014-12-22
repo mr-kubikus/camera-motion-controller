@@ -6,7 +6,7 @@ void control() {
   iTemp = map(R1, 0, 1023, 255, 0);
   M1_SETP = constrain(iTemp, 0, 255);
   
-  iTemp = map(R2, 0, 1023, 100, 1);
+  iTemp = map(R2, 0, 1023, 25, 1);
   M1_RATE = constrain(iTemp, 1, 25);
   
   button_update(&sb1Button, SB1);

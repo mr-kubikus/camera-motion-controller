@@ -2,6 +2,9 @@
 #include "globals.h"
 
 void readInputs() {
+  // В текущем проекте используются путевые концевые выключатели с НЗ контактами
+  // Если вы использует НР контакты, то исправьте код на следующий:
+  // SQ1 = !digitalRead(SQ1_PIN);  
   SQ1 = digitalRead(SQ1_PIN);
   SQ2 = digitalRead(SQ2_PIN);
   SB1 = !digitalRead(SB1_PIN);
